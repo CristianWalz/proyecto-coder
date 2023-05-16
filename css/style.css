@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2? family= DM+Sans:wght@500 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+                                            /* HEADER  INDEX */
+html, body {
+    font-size: 16px;
+}
+header {
+    background-color:black;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1,25rem;
+    padding: 15px;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main {
+    background-color: rgb(63, 124, 255);
+}
+.left-container {
+    display: flex;
+    align-items: center;
+}
+
+.left-container h1,
+.left-container h2 {
+    text-align: center;
+}
+/* .bi-person-check {
+    display: flex;
+    align-items: flex-start;
+    font-size: 1rem;
+} */
+.nav-index {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+.nav-index a {
+    color: white;
+}
+
+
+  /* CIERRE HEADER -CONTACTO */
+
+                                            /* APERTURA SECTION 1 INDEX */
+
+.wrapper-index {
+    position: relative;
+}
+.wrapper-index h3 {
+    position: absolute;
+    line-height: 25px;
+    font-size: 2rem;
+    top: 100px;
+    left: 15px;
+    padding: 15px;
+    border-color: white;
+    border-style:dotted;
+    color: white;
+}
+.wrapper-index img {
+    width: 100%;
+    height: 90vh;
+    background-size:cover;
+}
+                                            /*  CIERRE SECTION 1 MAIN */
+
+
+                                            /* APERTURA SECTION MAIN IMG INDEX */
+.wrapper{
+    display: flex;
+    width: 100%;
+    min-height: 900px
+}
+.wrapper .left-container,
+.wrapper .right-container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 2);     /* FORMA DE DIVIDIR EL CONTENEDOR */
+}
+.wrapper img {
+    max-width: 480px;
+    max-height: 320px;
+    border-radius: 10px;
+}
+                                            /* MEDIA QUARY */
+
+@media screen and (min-width: 320px) and (max-width:767px) {
+.header-container {
+    flex-direction: column;
+    font-size: 0.60rem;
+}
+.left-container {
+    flex-direction: column;
+}
+.nav-index {
+    gap: 4px;
+}
+.wrapper-index img {
+    object-fit:cover;
+}
+.wrapper-index h3 {
+    top: 96px;
+    font-size: 1.25rem;
+}
+}
+
+                                            /*APERTURA HEADER CONTACTO  */
+.nav-contacto {
+    display: flex;
+    gap:30px;
+    list-style-type: none;
+}
+.nav-contacto a {
+    color: white;
+}
+
+                                                /*APERTURA MAIN CONTACTO  */
+
+.barra-contacto{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style-type: none;
+
+}
+.titulo-contacto {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.50rem;
+}
+                                            /* APERTURA HEADER INFORMACION PERSONAL */
+.nav-informacionpersonal {
+    display: flex;
+    list-style-type: none;
+}
+.barra-informacionpersonal {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style-type: none;
+}
+                                            /* APERTURA MAIN INFORMACION PERSONAL */
+.titulo-informacionpersonal {
+    text-align: center;
+    font-size: 1.75rem;
+}
+.imagenes-informacionpersonal {
+    display: flex;
+    justify-content: space-around;
+}
+.wrapper_imginformacionpersonal {
+    display: flex;
+    height: 90vh;
+    margin-top: 12px;
+    background-color:#fffafabd;
+}
+.info-css,.info-html,.info-javascript{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: calc(100% / 3);
+}
+.info-css img,.info-html img,.info-javascript img {
+    background-size:cover;
+    object-fit: contain;
+    max-width: 500px;
+    max-height: 300px;
+    margin-top: 24px;
+}
+.info-css p,.info-html p,.info-javascript p {
+    height: 100%;
+    margin-top: 50px;
+    font-size: 1.50rem;
+    line-height: 36px;
+    text-align:center
+}
+.info-css h4,.info-html h4,.info-javascript h4 {
+    font-size: 1.50rem;
+    margin-bottom: 16px;
+}
+.input__ {
+    height: 100px;
+    width: 100px;
+    margin-left: 260px;
+    border:solid black;
+    background-color: antiquewhite;
+
+}
+                                            /* APERTURA REDES SOCIALES */
+.nav-redesociales {
+    display: flex;
+    list-style: none;
+}
+.menu-redesociales {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style-type: none;
+}
+                                            /* APERTURA SERVICIOS */
+.nav-servicios {
+    display: flex;
+    list-style-type: none;
+}
+                                                /*FOOTER  */
+footer {
+    height: 21.8vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+.menu-footer,a {
+    display: flex;
+    margin: 10px;
+    text-align: center;
+    flex-direction: column;
+    list-style-type: none;
+    color: white;
+}
+
+
+                                /* GRIDS */
+
+                                                             .caja {
+                                                                 background-color: red;
+                                                                  border: 2px solid black;
+                                                                 font-size: 2rem;
+                                                                  /* width: 100px;
+                                                                  height: 100px; */
+                                                                  }                             
+                                                                  
+                                                                  .caja-posicionada {
+                                                                    background-color: aqua;
+                                                                    /* width: 100px;
+                                                                    height: 100px; */
+                                                                  
+                                                                    /* Ubicar elemento hijo */
+                                                                    /* grid-column: 2/ span 3 ; */
+                                                                    /* grid-row: span 2; */
+                                                                  
+                                                                    /* grid-column: span 2; */
+                                                                  
+                                                                    /* Distribucion dentro de la celda
+                                                                     justify-self: center; Horizontal
+                                                                    align-self: stretch; Vertical
+                                                                    stretch | start |end | center
+                                                                    */
+                                                                  }
+                                                                  
+                                                                 /*  .contenedor {
+                                                                    background: rgb(67, 64, 64);
+                                                                    border: black solid 2px;
+                                                                  
+                                                                    height: 98vh; */
+                                                                  
+                                                                    /* Activar la grilla */
+                                                                    /* display: grid; */
+                                                                  
+                                                                    /* Declaracion filas y columnas */
+                                                                    /* grid-template-columns:minmax(auto,800px);
+                                                                     grid-template-rows:  */
+                                                                  
+                                                                    /* Posicion de los items hijos dentro de las celdas 
+                                                                    justify-items: Eje Horizontal
+                                                                    align-items: Eje vertical
+                                                                    stretch | start | end | center
+                                                                    */
+                                                                    /* justify-items: stretch;
+                                                                    align-items: stretch;
+                                                                  
+                                                                    /* Posicion de toda la grilla en su conjunto
+                                                                    justify-content: Eje Horizontal
+                                                                    align-content: Eje vertical
+                                                                    */
+                                                                   /*  justify-content: center;
+                                                                    align-content: center; */
+                                                                   /* * */
+                                                                  
+                                                                  /* -------- Grilla Noticias -------- */
+                                                                  
+                                                                  /* .grilla-noticias {
+                                                                    display: grid;
+                                                                    grid-template-columns: 2fr 1fr 1fr;
+                                                                    grid-template-rows: repeat(2, minmax(300px, 40vh));
+                                                                  
+                                                                    gap: 20px;
+                                                                  } */
+                                                                  
+                                                                  /* .noticia-destacada {
+                                                                    grid-row: span 2; */
+                                                                  
+                                                                    /* border-radius: 50%; */
+                                                                 /*  } */
+
+ 
+.titulo-index-2{
+    display: flex;
+    flex-direction: column;
+}
+.titulo-index-2 img{
+    height: 50vh;
+    width: 50vh;
+}
+.titulo-index-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo-index-3 img {
+    height: 50vh;
+    width: 50vh;
+}

@@ -3,21 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
-header {
+.header-container {
     background-color: black;
     color: white;
+    padding: 15px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
-.nav-index, a {
+.nav-index {
+    width: 50%;
+    margin-bottom: 24px;
+    margin-left: 12px;
+    font-size: 24px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.nav-index, a{
     list-style-type: none;
     color: white;
-    width: 100%;
 }
 .left-container {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: 8px;
+}
+.img {
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+.titles {
+    text-align: center;
+}
+.icono-index {
+    width: 50%;
+    border-radius: 12px;
+    margin: 32px;
 }
 .wrapper-index {
     display: flex;
@@ -71,4 +95,43 @@ header {
     margin-top: 16px;
 }
 
-@media screen and (min-width: 600px) and (max-width: 1024px) {}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .nav-index {
+        margin-left: 92px;
+    }
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .left-container {
+            display: flex;
+            flex-direction: row;
+        }
+        .icono-index {
+            width: 100%;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            max-width: 50%;
+            margin-bottom: 100px;
+        }
+        .nav-index {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            gap: 9px;
+            font-size: 1rem;
+        }
+    }
+    @media (min-width: 1024px) and (max-width: 1800px) {
+        nav {
+            margin-bottom: 200px;
+        }
+        .nav-index {
+            display: flex;
+            flex-wrap: nowrap;
+            text-align: start;
+            justify-content: start;
+            gap: 9px;
+            font-size: 28px;
+    }
+}

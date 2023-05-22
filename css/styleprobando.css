@@ -92,8 +92,33 @@ a:hover {
   align-items: center;
   justify-content: center;
   width: 100%;
-
   margin-top: 16px;
+}
+.container-iframe {
+  width: 100%;
+  background-color: aqua;
+  text-align: center;
+}
+.iframe {
+  width: 100%;
+}
+.nav-footer {
+  background-color: blueviolet;
+  height: 150px;
+  list-style-type: none;
+  display: grid;
+}
+.footer-container {
+  background-color: brown;
+}
+.derechos {
+  text-align: center;
+}
+.column-2 {
+  display: grid;
+}
+.column-3 {
+  display: grid;
 }
 
 @media screen and (min-width: 480px) and (max-width: 768px) {

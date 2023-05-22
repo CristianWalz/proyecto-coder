@@ -27,6 +27,9 @@ main {
     display: flex;
     align-items: center;
 }
+.img-index {
+    height: 50px;
+}
 
 .left-container h1,
 .left-container h2 {

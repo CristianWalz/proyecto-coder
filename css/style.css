@@ -35,11 +35,6 @@ main {
 .left-container h2 {
     text-align: center;
 }
-.nav-index {
-    display: flex;
-    gap: 24px;
-    list-style: none;
-}
 .nav-index a {
     color: white;
 }
@@ -240,23 +235,22 @@ li {
 }
 @media (min-width: 1024px) and (max-width: 1800px) {
     .header-container {
-    height: 75px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     }
     .left-container {
-    flex-direction: row;
     gap: 6px;
     }
     .tittles-index {
     font-size: 1.25rem;
     }
     .nav-index {
-    flex-direction: row;
-    font-size: 1.25rem;
-    gap: 12px;
-    padding: 0;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.25rem;
+        gap: 12px;
+        padding: 0;
     }
     .img-index {
     height: 91.5vh;

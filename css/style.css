@@ -306,7 +306,7 @@ li {
     text-decoration-line: underline;
     font-size: 1.75rem;
     padding: 6px;
-    margin-bottom: 6px;
+    background-color: #F4A261;
 }
 .imagenes-informacionpersonal {
     display: flex;
@@ -317,7 +317,7 @@ li {
     width: 100%;
     height: 100%;
     padding-top: 9px;
-    background-color:#fffafabd;
+    background-color:#E9C46A;
 }
 .info-css,
 .info-html,

@@ -380,9 +380,10 @@ li {
     }
     .titulo-informacionpersonal {
         font-size: 1.25rem;
+        padding: 8px;
     }
     .barra-informacionpersonal {
-        padding: 6px;
+        padding: 12px;
     }
     .wrapper_imginformacionpersonal {
         width: 100%;

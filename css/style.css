@@ -5,44 +5,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-                                            /* HEADER  INDEX */
 html, body {
     font-size: 16px;
-}
-header {
-    background-color:black;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1,25rem;
-    padding: 15px;
-    color: white;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-main {
-    background-color: rgb(63, 124, 255);
-}
-.left-container {
-    display: flex;
-    align-items: center;
-}
-.img-index {
-    height: 50px;
+    font-family: sans-serif;
 }
 
-.left-container h1,
-.left-container h2 {
-    text-align: center;
-}
-.nav-index a {
-    color: white;
-}
-
-
-  /* CIERRE HEADER -CONTACTO */
-
-/* APERTURA SECTION 1 INDEX */
+/* APERTURA HEADER INDEX */
 .header-container {
     background-color: #022f68;
     color: black;
@@ -51,6 +19,7 @@ main {
     align-items: center;
 }
 .icono-index {
+    height: 50px;
     padding: 1px;
     background-color: black;
 }
@@ -185,62 +154,41 @@ li {
 
 @media screen and (min-width: 480px) and (max-width: 768px) {
     .left-container {
-    width: 100%;
+        width: 100%;
     }
     .icono-index {
-    margin-bottom: 6px;
-    height: 60px;
+        margin-bottom: 6px;
+        height: 60px;
     }
     .tittles-index {
-    font-size: 1.75rem;
+        font-size: 1.75rem;
     }
     .nav-index {
-    flex-direction: row;
-    font-size: 1rem;
-    padding: 0;
-    gap: 4px;
+        font-size: 1.50rem;
+        padding: 0;
+        gap: 4px;
     }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
     .header-container {
     display: flex;
-    align-items: flex-start;
-    }
-    .left-container {
-        width: 50%;
-        display: flex;
-        flex-direction: row;
-    }
-    .tittle-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: 12px;
+    justify-content: center;
+    flex-direction: row;
     }
     .icono-index {
-        width: 20%;
-    }
-    .nav-index {
-    width: 70%;
-    flex-direction: row;
-    padding: 0;
-    gap: 6px;
-    text-align: center;
-    }
-    .nav-index,
-    li {
-    font-size: 1rem;
-    margin-top: 12px;
+        display: flex;
     }
 }
-@media (min-width: 1024px) and (max-width: 1800px) {
+@media (min-width: 1024px) and (max-width: 2100px) {
     .header-container {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     }
     .left-container {
-    gap: 6px;
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
     }
     .tittles-index {
     font-size: 1.25rem;
@@ -256,37 +204,37 @@ li {
     height: 91.5vh;
     }
     .img-center {
-    height: 60vh;
-    object-fit: contain;
+        height: 60vh;
+        object-fit: contain;
     }
     .container-footer {
-    display: grid;
-    background-color: #fffcf2;
-    color: black;
-    text-align: center;
-    width: 100%;
+        display: grid;
+        background-color: #fffcf2;
+        color: black;
+        text-align: center;
+        width: 100%;
 
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    column-gap: 0;
-    row-gap: 0;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 0;
+        row-gap: 0;
     }
     .column-1 {
-    grid-row: 1 / 4;
+        grid-row: 1 / 4;
     }
     .column-2,
     .column-3 {
-    grid-column: 2 / 4;
+        grid-column: 2 / 4;
     }
     .column-4 {
-    grid-column: 1 / 4;
-    text-align: center;
+        grid-column: 1 / 4;
+        text-align: center;
     }
     .column_img {
-    margin-top: 12px;
-    width: 40%;
-    height: 120px;
-    object-fit: contain;
+        margin-top: 12px;
+        width: 40%;
+        height: 120px;
+        object-fit: contain;
     }
 }
 /* Apertura Header contacto */
@@ -315,16 +263,30 @@ li {
 }
                         /* APERTURA HEADER INFORMACION PERSONAL */
 .header-informacionpersonal {
-    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    background-color: cadetblue;
+    padding: 6px;
+
+}
+.tittle-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.75rem;
 }
 .nav-informacionpersonal {
     display: flex;
     list-style-type: none;
     gap: 12px;
+    padding: 12px;
 }
-a {
+.nav-informacionpersonal,li{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-informacionpersonal,a {
+    color: black;
 }
 .barra-informacionpersonal {
     display: flex;
@@ -333,6 +295,10 @@ a {
     gap: 6px;
     padding: 12px;
     font-size: 1.25rem;
+    background-color: #E76F51;
+}
+.barra-informacionpersonal,li {
+    color: black;
 }
                                             /* APERTURA MAIN INFORMACION PERSONAL */
 .titulo-informacionpersonal {
@@ -401,18 +367,19 @@ a {
         flex-direction: column;
         text-align: center;
     }
-    .tittle-header {
-        line-height: 2rem;
-    }
     .nav-informacionpersonal {
         flex-direction: column;
         gap: 0;
     }
     .tittle-header {
+        display: block;
         font-size: 0.50rem;
     }
     .titulo-informacionpersonal {
         font-size: 1.25rem;
+    }
+    .barra-informacionpersonal {
+        padding: 6px;
     }
     .wrapper_imginformacionpersonal {
         width: 100%;

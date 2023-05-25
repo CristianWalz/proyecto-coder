@@ -455,20 +455,3 @@ a {
     list-style-type: none;
 }
                                                 /*FOOTER  */
-footer {
-    height: 21.8vh;
-    background-color: black;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-}
-
-.menu-footer,a {
-    display: flex;
-    margin: 10px;
-    text-align: center;
-    flex-direction: column;
-    list-style-type: none;
-    color: white;
-}

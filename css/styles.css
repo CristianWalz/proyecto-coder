@@ -258,6 +258,16 @@ li {
 }
 
 /* APERTURA HEADER INFORMACION PERSONAL */
+a {
+  font-weight: 500;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+a:hover {
+  color: red;
+}
+
 .header-informacionpersonal {
   background-color: cadetblue;
   justify-content: space-around;
@@ -272,12 +282,6 @@ li {
   list-style-type: none;
   padding: 12px;
   gap: 12px;
-}
-
-a {
-  font-weight: 500;
-  color: white;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .barra-informacionpersonal {

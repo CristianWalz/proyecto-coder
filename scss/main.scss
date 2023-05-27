@@ -242,7 +242,10 @@ li {
 /* APERTURA HEADER INFORMACION PERSONAL */
 .header-informacionpersonal {
   background-color: cadetblue;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.left-container {
+  gap: 1rem;
 }
 .nav-informacionpersonal {
   display: flex;

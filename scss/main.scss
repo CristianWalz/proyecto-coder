@@ -111,7 +111,7 @@
 }
 .container-iframe {
   width: 100%;
-  height: 64vh;
+  height: 52.5vh;
   background-color: #7b74f4;
   text-align: center;
 
@@ -128,13 +128,13 @@
   display: grid;
   background-color: #fffcf2;
   color: black;
-  font-family: cursive;
   text-align: center;
 
   grid-template-columns: 100%;
   grid-template-rows: 1fr 150px 150px;
 
   .column-1 {
+    font-family: sans-serif;
     background-color: #3eaef4;
 
     &__img {
@@ -146,13 +146,18 @@
   }
 
   .column-2 {
+    font-family: cursive;
     background-color: #8e8e7d;
     padding: 1rem;
   }
   .column-3 {
+    font-family: cursive;
     background-color: #f55656;
   }
   .column-4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
     background-color: #ffba52;
   }
 }
@@ -213,7 +218,7 @@ li {
   }
   .container-iframe {
     width: 100%;
-    height: 55.9vh;
+    height: 50vh;
     background-color: #7b74f4;
     text-align: center;
   }

@@ -80,22 +80,22 @@
   object-fit: contain;
 }
 
-.wrapper-text-center {
+.container-text-center {
   display: flex;
   background-color: #7b74f4;
   flex-direction: column;
   text-align: center;
 }
-.wrapper-text-center__title {
+.container-text-center__title {
   margin-bottom: 6px;
 }
-.wrapper-text-center .disenio-web {
+.container-text-center__disenio {
   color: blue;
 }
-.wrapper-text-center .wrapper-text-center .wrapper-text-center__description {
+.container-text-center__description {
   font-family: Arial, Helvetica, sans-serif;
 }
-.wrapper-text-center .btn {
+.container-text-center .container-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,20 +103,17 @@
   margin-top: 16px;
 }
 
-.wrapper-iframe {
+.container-iframe {
   width: 100%;
   background-color: #7b74f4;
   text-align: center;
 }
-
-.wrapper-iframe,
-h4 {
+.container-iframe__title {
   text-decoration: underline;
   padding-top: 6px;
   padding-bottom: 0;
 }
-
-.iframe {
+.container-iframe .iframe {
   width: 100%;
 }
 
@@ -132,8 +129,11 @@ h4 {
 .column-1 {
   background-color: #3eaef4;
 }
-.column-1 .p {
-  margin-bottom: 0;
+.column-1__img {
+  width: 100%;
+  height: 50px;
+  object-fit: contain;
+  margin: 6px 0 6px 0;
 }
 
 .column-2 {
@@ -152,12 +152,6 @@ h4 {
 ul,
 li {
   list-style-type: none;
-}
-
-.column_img {
-  width: 100%;
-  height: 50px;
-  object-fit: contain;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -232,11 +226,12 @@ li {
     grid-column: 1/4;
     text-align: center;
   }
-  .column_img {
+  .column-1__img {
     margin-top: 2rem;
     width: 40%;
     height: 120px;
     object-fit: contain;
+    margin: 6px 0 6px 0;
   }
 }
 /* Apertura Header contacto */

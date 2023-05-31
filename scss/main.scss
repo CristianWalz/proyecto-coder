@@ -20,7 +20,7 @@
     color: white;
 
     .img__left {
-      height: 50px;
+      height: 35px;
       border-radius: 12px;
       padding: 1px;
       background-color: black;
@@ -96,7 +96,7 @@
     margin-bottom: 6px;
   }
   &__disenio {
-    color: blue;
+    color: white;
   }
   &__description {
     font-family: Arial, Helvetica, sans-serif;
@@ -111,6 +111,7 @@
 }
 .container-iframe {
   width: 100%;
+  height: 64vh;
   background-color: #7b74f4;
   text-align: center;
 
@@ -119,7 +120,7 @@
     padding-top: 6px;
     padding-bottom: 0;
   }
-  .iframe {
+  &__iframe {
     width: 100%;
   }
 }
@@ -127,31 +128,33 @@
   display: grid;
   background-color: #fffcf2;
   color: black;
+  font-family: cursive;
   text-align: center;
 
   grid-template-columns: 100%;
   grid-template-rows: 1fr 150px 150px;
-}
-.column-1 {
-  background-color: #3eaef4;
 
-  &__img {
-    width: 100%;
-    height: 50px;
-    object-fit: contain;
-    margin: 6px 0 6px 0;
+  .column-1 {
+    background-color: #3eaef4;
+
+    &__img {
+      width: 100%;
+      height: 50px;
+      object-fit: contain;
+      margin: 6px 0 6px 0;
+    }
   }
-}
 
-.column-2 {
-  background-color: #8e8e7d;
-  padding: 1rem;
-}
-.column-3 {
-  background-color: #f55656;
-}
-.column-4 {
-  background-color: #ffba52;
+  .column-2 {
+    background-color: #8e8e7d;
+    padding: 1rem;
+  }
+  .column-3 {
+    background-color: #f55656;
+  }
+  .column-4 {
+    background-color: #ffba52;
+  }
 }
 ul,
 li {
@@ -205,8 +208,14 @@ li {
     white-space: nowrap;
   }
   /* CLOSED HEADER */
-  .img-index {
-    height: 91.5vh;
+  .wrapper-index__img {
+    height: 95vh;
+  }
+  .container-iframe {
+    width: 100%;
+    height: 55.9vh;
+    background-color: #7b74f4;
+    text-align: center;
   }
   .wrapper-center__img {
     height: 60vh;
@@ -223,25 +232,27 @@ li {
     grid-template-rows: 1fr 1fr;
     column-gap: 0;
     row-gap: 0;
-  }
-  .column-1 {
-    grid-row: 1 / 4;
-    padding: 1rem;
-  }
-  .column-2,
-  .column-3 {
-    grid-column: 2 / 4;
-  }
-  .column-4 {
-    grid-column: 1 / 4;
-    text-align: center;
-  }
-  .column-1__img {
-    margin-top: 2rem;
-    width: 40%;
-    height: 120px;
-    object-fit: contain;
-    margin: 6px 0 6px 0;
+
+    .column-1 {
+      grid-row: 1 / 4;
+      padding: 1rem;
+
+      &__img {
+        margin-top: 2rem;
+        width: 40%;
+        height: 120px;
+        object-fit: contain;
+        margin: 30px 0 6px 0;
+      }
+    }
+    .column-2,
+    .column-3 {
+      grid-column: 2 / 4;
+    }
+    .column-4 {
+      grid-column: 1 / 4;
+      text-align: center;
+    }
   }
 }
 /* Apertura Header contacto */

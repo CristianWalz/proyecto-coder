@@ -262,6 +262,7 @@ li {
   .wrapper-center .container-text-center__description {
     font-weight: 600;
     line-height: 2rem;
+    padding: 0 80px 0 80px;
   }
   .container-footer {
     display: grid;
@@ -331,7 +332,7 @@ li {
 /* APERTURA HEADER INFORMACION PERSONAL */
 .header-informacionpersonal {
   display: flex;
-  background-color: cadetblue;
+  background-image: linear-gradient(#022f68, #1f69c7);
   justify-content: space-around;
   align-items: center;
 }
@@ -340,13 +341,16 @@ li {
   align-items: center;
   gap: 6px;
 }
-.header-informacionpersonal .img__left {
+.header-informacionpersonal .left-infpersonal .img__left {
   height: 50px;
   border-radius: 12px;
   padding: 4px;
 }
-.header-informacionpersonal .titles-infpersonal .titles__index {
-  font-family: "Times New Roman", Times, serif;
+.header-informacionpersonal .titles-infpersonal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
 }
 
 .nav-informacionpersonal {
@@ -354,6 +358,17 @@ li {
   list-style-type: none;
   padding: 12px;
   gap: 12px;
+}
+.nav-informacionpersonal .li__informacionpersonal {
+  font-size: 1rem;
+}
+.nav-informacionpersonal .li__informacionpersonal_informacionpersonal,
+.nav-informacionpersonal .li__informacionpersonal a {
+  color: white;
+}
+.nav-informacionpersonal .li__informacionpersonal_informacionpersonal,
+.nav-informacionpersonal .li__informacionpersonal a:hover {
+  color: red;
 }
 
 .barra-informacionpersonal {
@@ -388,26 +403,45 @@ li {
   justify-content: space-around;
 }
 
+.container {
+  height: 44.8vw;
+}
+.container__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container__description {
+  position: absolute;
+  top: 30%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  font-size: 1.5rem;
+  padding: 8px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
 .wrapper_imginformacionpersonal {
   display: flex;
   width: 100%;
   height: 100%;
-  padding-top: 9px;
   background-color: #e9c46a;
+  padding-top: 12px;
 }
-
-.info-css,
-.info-html,
-.info-javascript {
+.wrapper_imginformacionpersonal .info-css,
+.wrapper_imginformacionpersonal .info-html,
+.wrapper_imginformacionpersonal .info-javascript {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 33.3333333333%;
 }
-
-.info-css img,
-.info-html img,
-.info-javascript img {
+.wrapper_imginformacionpersonal .info-css img,
+.wrapper_imginformacionpersonal .info-html img,
+.wrapper_imginformacionpersonal .info-javascript img {
   background-size: cover;
   object-fit: contain;
   max-width: 500px;
@@ -416,25 +450,23 @@ li {
   filter: drop-shadow(5px 5px 20px black);
   border-radius: 15px;
 }
-
-.info-css p,
-.info-html p,
-.info-javascript p {
+.wrapper_imginformacionpersonal .info-css p,
+.wrapper_imginformacionpersonal .info-html p,
+.wrapper_imginformacionpersonal .info-javascript p {
   height: auto;
   font-size: 1.5rem;
   line-height: 36px;
   text-align: center;
-  margin: 15px;
+  font-family: cursive;
+  margin: 0px 12px 0 12px;
 }
-
-.info-css h4,
-.info-html h4,
-.info-javascript h4 {
+.wrapper_imginformacionpersonal .info-css h4,
+.wrapper_imginformacionpersonal .info-html h4,
+.wrapper_imginformacionpersonal .info-javascript h4 {
   font-size: 1.5rem;
   margin-bottom: 16px;
 }
-
-.input__ {
+.wrapper_imginformacionpersonal .input__ {
   height: 40px;
   width: 110px;
   padding: 4px;
@@ -489,6 +521,14 @@ li {
     font-size: 1.25rem;
     padding: 8px;
   }
+  .container {
+    height: 60vh;
+  }
+  .container__description {
+    top: 55%;
+    width: 80px;
+    font-size: 0.75rem;
+  }
   .wrapper_imginformacionpersonal {
     width: 100%;
     height: auto;
@@ -496,51 +536,66 @@ li {
     flex-direction: column;
     align-items: center;
   }
-  .info-html,
-  .info-css,
-  .info-javascript {
+  .wrapper_imginformacionpersonal .info-html,
+  .wrapper_imginformacionpersonal .info-css,
+  .wrapper_imginformacionpersonal .info-javascript {
     width: 300px;
     font-size: 16px;
   }
-  .info-css p,
-  .info-html p,
-  .info-javascript p {
+  .wrapper_imginformacionpersonal .info-css p,
+  .wrapper_imginformacionpersonal .info-html p,
+  .wrapper_imginformacionpersonal .info-javascript p {
     font-size: 0.75rem;
     line-height: 16px;
   }
-  .info-css img,
-  .info-html img,
-  .info-javascript img {
+  .wrapper_imginformacionpersonal .info-css img,
+  .wrapper_imginformacionpersonal .info-html img,
+  .wrapper_imginformacionpersonal .info-javascript img {
     height: 150px;
   }
-  /*APERTURA MAIN CONTACTO  */
-  .barra-contacto {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    list-style-type: none;
-  }
-  .titulo-contacto {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 1.5rem;
-  }
-  /* APERTURA REDES SOCIALES */
-  .nav-redesociales {
-    display: flex;
-    list-style: none;
-  }
-  .menu-redesociales {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    list-style-type: none;
-  }
-  /* APERTURA SERVICIOS */
-  .nav-servicios {
-    display: flex;
-    list-style-type: none;
-  }
+}
+/*APERTURA MAIN CONTACTO  */
+.section-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  height: 100vh;
+}
+.section-contacto .container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  background-color: #1f69c7;
+}
+.section-contacto .container-form label {
+  margin: 10px 0 10px 0;
+}
+.section-contacto .container-form .form_text {
+  padding: 20px;
+}
+.section-contacto .container-form .form_textarea {
+  padding: 20px;
+}
+
+/* APERTURA REDES SOCIALES */
+.nav-redesociales {
+  display: flex;
+  list-style: none;
+}
+
+.menu-redesociales {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style-type: none;
+}
+
+/* APERTURA SERVICIOS */
+.nav-servicios {
+  display: flex;
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

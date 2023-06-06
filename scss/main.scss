@@ -408,7 +408,12 @@ li {
 /* APERTURA MAIN INFORMACION PERSONAL */
 .barra-informacionpersonal {
   display: flex;
-  background-color: #e76f51;
+  background: rgb(0, 119, 182);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 119, 182, 1) 51%,
+    rgba(254, 250, 224, 1) 100%
+  );
   height: 50px;
   padding: 12px;
   gap: 12px;
@@ -570,8 +575,8 @@ li {
     .info-css p,
     .info-html p,
     .info-javascript p {
-      font-size: 0.75rem;
-      line-height: 16px;
+      font-size: 1rem;
+      line-height: 24px;
     }
     .info-css img,
     .info-html img,
@@ -608,19 +613,37 @@ li {
     }
   }
 }
-/* APERTURA REDES SOCIALES */
-.nav-redesociales {
+/* APERTURA REDES SOCIALES MAIN */
+
+.social-media-section {
+  width: 100%;
+  height: 100%;
   display: flex;
-  list-style: none;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fefae0;
+
+  &__image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  &__title_one {
+    margin: 1em;
+  }
+  &__title {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin: 1em;
+  }
+  &__description {
+    font-family: Arial;
+    padding: 1em;
+    margin: 1em;
+  }
+  .hidden {
+    display: none;
+  }
+  .probando {
+  }
 }
-.menu-redesociales {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  list-style-type: none;
-}
-/* APERTURA SERVICIOS */
-.nav-servicios {
-  display: flex;
-  list-style-type: none;
-}
+/* @media (min-width: 769px) and (max-width: 1024px) */

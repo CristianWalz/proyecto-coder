@@ -384,7 +384,8 @@ li {
 /* APERTURA MAIN INFORMACION PERSONAL */
 .barra-informacionpersonal {
   display: flex;
-  background-color: #e76f51;
+  background: rgb(0, 119, 182);
+  background: linear-gradient(0deg, rgb(0, 119, 182) 51%, rgb(254, 250, 224) 100%);
   height: 50px;
   padding: 12px;
   gap: 12px;
@@ -545,8 +546,8 @@ li {
   .wrapper_imginformacionpersonal .info-css p,
   .wrapper_imginformacionpersonal .info-html p,
   .wrapper_imginformacionpersonal .info-javascript p {
-    font-size: 0.75rem;
-    line-height: 16px;
+    font-size: 1rem;
+    line-height: 24px;
   }
   .wrapper_imginformacionpersonal .info-css img,
   .wrapper_imginformacionpersonal .info-html img,
@@ -579,23 +580,35 @@ li {
   padding: 20px;
 }
 
-/* APERTURA REDES SOCIALES */
-.nav-redesociales {
+/* APERTURA REDES SOCIALES MAIN */
+.social-media-section {
+  width: 100%;
+  height: 100%;
   display: flex;
-  list-style: none;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fefae0;
 }
-
-.menu-redesociales {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  list-style-type: none;
+.social-media-section__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
-
-/* APERTURA SERVICIOS */
-.nav-servicios {
-  display: flex;
-  list-style-type: none;
+.social-media-section__title_one {
+  margin: 1em;
 }
+.social-media-section__title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 1em;
+}
+.social-media-section__description {
+  font-family: Arial;
+  padding: 1em;
+  margin: 1em;
+}
+.social-media-section .hidden {
+  display: none;
+}
+/* @media (min-width: 769px) and (max-width: 1024px) */
 
 /*# sourceMappingURL=styles.css.map */

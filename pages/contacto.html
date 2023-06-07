@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
   </head>
   <body>
     <header class="header-wrapper">
@@ -26,9 +30,6 @@
             <a href="./informacionpersonal.html">Informacion Personal</a>
           </li>
           <li class="list__index">
-            <a href="./contacto.html">Contacto</a>
-          </li>
-          <li class="list__index">
             <a href="./servicios.html">Servicios</a>
           </li>
         </ul>
@@ -42,25 +43,24 @@
         </ol>
       </div>
       <section class="section-contacto">
-        <hr />
-        <div>
-          <h3>Contactanos</h3>
-        </div>
+        <div class="container-contacto">
         <form class="container-form" action="">
-          <label for="nombre-y-apellido">Nombre y Apellido</label>
+          <label for="nombre-y-apellido">Nombre y Apellido <i class="bi bi-pencil-fill"></i></label>
           <input class="form_text" type="text" value="" />
 
-          <label for="email">Email</label>
+          <label for="email">Email <i class="bi bi-envelope-at"></i></label>
           <input class="form_text" type="email" value="" />
 
-          <label for="telefono">Teléfono</label>
-          <input class="form_text" type="number" value="Nùmero" />
+          <label for="telefono">Teléfono <i class="bi bi-telephone"></i></label>
+          <input class="form_text" type="number" value="Nùmero" placeholder="Ingrese su número" />
 
-          <label for="">Motivo de consulta</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          <label for="">Motivo de consulta <i class="bi bi-chat-dots"></i></label>
+          <textarea name="message" id="message" placeholder="Ingrese su motivo" cols="30" rows="10"></textarea>
 
           <input type="submit" />
           <input type="submit" value="Resetear formulario" />
         </form>
+      </div>
+    </section>
   </body>
 </html>

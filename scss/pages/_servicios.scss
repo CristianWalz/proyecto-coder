@@ -1,0 +1,32 @@
+/* Servicios Main */
+.wrapper-redesociales {
+  background-color: lightgoldenrodyellow;
+}
+
+.container-redes {
+  &__img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+  }
+  &__title {
+    text-align: center;
+    padding: 1em;
+  }
+}
+.card {
+  /* background-color: lightgoldenrodyellow; */
+  text-align: center;
+
+  &__title {
+    width: 100%;
+    background-color: #80808047;
+    padding: 1em;
+  }
+  &__description {
+    font-family: arial;
+    padding: 1em;
+    margin: 1em;
+    line-height: 1.5em;
+  }
+}

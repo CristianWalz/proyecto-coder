@@ -1,43 +1,44 @@
-.header-wrapper {
-  background-image: linear-gradient(#022f68, #1f69c7);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+/* *APERTURA MAIN CONTACTO */
 
-  .left-container {
+.contact-wrapper {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  text-align: center;
+
+  .contact-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    width: 50%;
-    margin: 6px;
-    color: white;
 
-    .img__left {
-      height: 35px;
-      border-radius: 12px;
-      padding: 1px;
-      background-color: black;
-    }
-    .titles {
-      .titles__index {
-        font-size: 1.25rem;
+    .contact-form {
+      width: 100%;
+      margin: 10px 0 10px 0;
+
+      &__inputext {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
       }
-    }
-  }
-  .nav-index {
-    /* white-space: nowrap; */
-    font-size: 1rem;
-    padding: 0;
-    margin: 4px;
-
-    list__index,
-    a {
-      font-weight: 500;
-      color: white;
-
-      &:hover {
-        color: red;
+      &__inputsubmit {
+        background-color: #4caf50;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      &__inputsubmitRed {
+        @extend .contact-form__inputsubmit;
+        background-color: red;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+      }
+      textarea {
+        @extend .contact-form__inputext;
       }
     }
   }

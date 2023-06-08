@@ -1,11 +1,114 @@
+@charset "UTF-8";
+/* base: Aquí puedes colocar los estilos base de tu proyecto, como estilos para elementos HTML (body, p, h1, etc.) y estilos generales. */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
-*::selection {
-  background-color: white;
+a {
+  color: white;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.header-wrapper {
+  background-image: linear-gradient(#022f68, #1f69c7);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header-wrapper .left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  margin: 6px;
+  color: white;
+}
+.header-wrapper .left-container .img__left {
+  height: 35px;
+  border-radius: 12px;
+  padding: 1px;
+  background-color: black;
+}
+.header-wrapper .left-container .titles .titles__index {
+  font-size: 1.25rem;
+}
+.header-wrapper .nav-index {
+  /* white-space: nowrap; */
+  font-size: 1rem;
+  padding: 0;
+  margin: 4px;
+}
+.header-wrapper .nav-index list__index,
+.header-wrapper .nav-index a {
+  font-weight: 500;
+  color: white;
+}
+.header-wrapper .nav-index list__index:hover,
+.header-wrapper .nav-index a:hover {
+  color: red;
+}
+
+/* FOOTER */
+.container-footer {
+  display: grid;
+  background-color: #fffcf2;
+  color: black;
+  text-align: center;
+  width: 100%;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 0;
+  row-gap: 0;
+}
+.container-footer .column-1 {
+  grid-row: 1/4;
+  padding: 2rem;
+}
+.container-footer .column-1 h3 {
+  padding: 12px;
+}
+.container-footer .column-1 p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.container-footer .column-1__a {
+  margin-top: 2rem;
+}
+.container-footer .column-1__img {
+  margin-top: 2rem;
+  width: 40%;
+  height: 300px;
+  object-fit: contain;
+  margin: 30px 0 6px 0;
+}
+.container-footer .column-2 {
+  padding: 3rem;
+  line-height: 2rem;
+  font-family: cursive;
+  background-color: #8e8e7d;
+  grid-column: 2/4;
+}
+.container-footer .column-3 {
+  padding: 3rem;
+  grid-column: 2/4;
+}
+.container-footer .column-3 .list-column3 {
+  font-weight: 600;
+}
+.container-footer .column-3 .list-column3 .column3__a {
+  color: white;
+}
+.container-footer .column-4 {
+  grid-column: 1/4;
+  text-align: center;
 }
 
 /* APERTURA HEADER INDEX */
@@ -65,7 +168,6 @@
   border-style: groove;
   border-color: black;
   color: white;
-  /* background-color: #27548f; */
   background-image: linear-gradient(#022f68, #1f69c7);
 }
 .wrapper-index__img {
@@ -318,70 +420,44 @@ li {
     text-align: center;
   }
 }
-/* Apertura Header contacto */
-.nav-contacto {
-  display: flex;
-  gap: 30px;
-  list-style-type: none;
+/* *APERTURA MAIN CONTACTO */
+.contact-wrapper {
+  background-color: #f7f7f7;
+  padding: 2rem;
+  text-align: center;
 }
-
-.nav-contacto a {
+.contact-wrapper .contact-container {
+  display: flex;
+  align-items: center;
+}
+.contact-wrapper .contact-container .contact-form {
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+.contact-wrapper .contact-container .contact-form__inputext, .contact-wrapper .contact-container .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-wrapper .contact-container .contact-form__inputsubmit, .contact-wrapper .contact-container .contact-form__inputsubmitRed {
+  background-color: #4caf50;
   color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-
-/* APERTURA HEADER INFORMACION PERSONAL */
-.header-informacionpersonal {
-  display: flex;
-  background-image: linear-gradient(#022f68, #1f69c7);
-  justify-content: space-around;
-  align-items: center;
+.contact-wrapper .contact-container .contact-form__inputsubmitRed {
+  background-color: red;
 }
-.header-informacionpersonal .left-infpersonal {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.contact-wrapper .contact-container .contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
 }
-.header-informacionpersonal .left-infpersonal .img__left {
-  height: 50px;
-  border-radius: 12px;
-  padding: 4px;
-}
-.header-informacionpersonal .titles-infpersonal {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.75rem;
-}
-
-.nav-informacionpersonal {
-  display: flex;
-  list-style-type: none;
-  padding: 12px;
-  gap: 12px;
-}
-.nav-informacionpersonal .li__informacionpersonal {
-  font-size: 1rem;
-}
-.nav-informacionpersonal .li__informacionpersonal_informacionpersonal,
-.nav-informacionpersonal .li__informacionpersonal a {
-  color: white;
-}
-.nav-informacionpersonal .li__informacionpersonal_informacionpersonal,
-.nav-informacionpersonal .li__informacionpersonal a:hover {
-  color: red;
-}
-
-.barra-informacionpersonal {
-  display: flex;
-  align-items: center;
-  list-style-type: none;
-  gap: 6px;
-  padding: 12px;
-  font-size: 1.25rem;
-  background-color: #e76f51;
-}
-
-/* APERTURA MAIN INFORMACION PERSONAL */
+/* * APERTURA MAIN INFORMACION PERSONAL */
 .barra-informacionpersonal {
   display: flex;
   background: rgb(0, 119, 182);
@@ -555,34 +631,6 @@ li {
     height: 150px;
   }
 }
-/*APERTURA MAIN CONTACTO  */
-.container-contacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: white;
-}
-.container-contacto .container-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background-color: #1f69c7;
-}
-.container-contacto .container-form label {
-  margin: 10px 0 10px 0;
-}
-.container-contacto .container-form .form_text {
-  padding: 20px;
-}
-.container-contacto .container-form .form_textarea {
-  padding: 20px;
-}
-.container-contacto .container-form input {
-  padding: 6px;
-  margin: 1em;
-}
-
 /* APERTURA REDES SOCIALES MAIN */
 .social-media-section {
   width: 100%;
@@ -609,12 +657,14 @@ li {
   padding: 1em;
   margin: 1em;
 }
-.social-media-section .hidden {
+.social-media-section--hidden {
+  /* hidden in mobile */
   display: none;
 }
+
 /* @media (min-width: 769px) and (max-width: 1024px) */
 /* @media (min-width: 1024px) and (max-width: 1024px) */
-/* Servicios */
+/* Servicios Main */
 .wrapper-redesociales {
   background-color: lightgoldenrodyellow;
 }

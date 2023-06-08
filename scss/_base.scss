@@ -6,12 +6,13 @@ $color-btn: cadetblue;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 a {
-  text-decoration: none;
+  color: white;
 }
 ul,
 ol {
-  list-style: none;
+  list-style-type: none;
 }

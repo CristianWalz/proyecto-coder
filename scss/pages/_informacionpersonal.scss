@@ -1,0 +1,181 @@
+/* * APERTURA MAIN INFORMACION PERSONAL */
+
+.barra-informacionpersonal {
+  display: flex;
+  background: rgb(0, 119, 182);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 119, 182, 1) 51%,
+    rgba(254, 250, 224, 1) 100%
+  );
+  height: 50px;
+  padding: 12px;
+  gap: 12px;
+}
+.educacion-informacionpersonal {
+  text-align: center;
+  text-decoration-line: underline;
+  font-size: 1.75rem;
+  padding: 6px;
+  background-color: #f4a261;
+}
+.imagenes-informacionpersonal {
+  display: flex;
+  justify-content: space-around;
+}
+.container {
+  height: 44.8vw;
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__description {
+    position: absolute;
+    top: 30%;
+    left: 50.5%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    font-size: 1.5rem;
+    padding: 8px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: white;
+  }
+}
+.wrapper_imginformacionpersonal {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #e9c46a;
+  padding-top: 12px;
+
+  .info-css,
+  .info-html,
+  .info-javascript {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: calc(100% / 3);
+  }
+  .info-css img,
+  .info-html img,
+  .info-javascript img {
+    background-size: cover;
+    object-fit: contain;
+    max-width: 500px;
+    max-height: 300px;
+    margin: 24px;
+    filter: drop-shadow(5px 5px 20px black);
+    border-radius: 15px;
+  }
+  .info-css p,
+  .info-html p,
+  .info-javascript p {
+    height: auto;
+    font-size: 1.5rem;
+    line-height: 36px;
+    text-align: center;
+    font-family: cursive;
+    margin: 0px 12px 0 12px;
+  }
+  .info-css h4,
+  .info-html h4,
+  .info-javascript h4 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+  .input__ {
+    height: 40px;
+    width: 110px;
+    padding: 4px;
+    align-self: center;
+    border: solid black;
+    background-color: antiquewhite;
+    border-radius: 6px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .header-informacionpersonal {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    .left-infpersonal {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+    .titles-infpersonal {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.6rem;
+      padding: 3px;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .nav-informacionpersonal {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .li__informacionpersonal {
+      font-weight: 600;
+    }
+    a {
+      font-family: sans-serif;
+      color: white;
+    }
+  }
+
+  .barra-informacionpersonal {
+    padding: 12px;
+
+    li {
+      font-weight: 600;
+    }
+    a {
+      font-family: sans-serif;
+      color: white;
+    }
+  }
+  .educacion-informacionpersonal {
+    font-size: 1.25rem;
+    padding: 8px;
+  }
+  .container {
+    height: 60vh;
+
+    &__description {
+      top: 50%;
+      width: 100px;
+      font-size: 0.75rem;
+    }
+  }
+  .wrapper_imginformacionpersonal {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .info-html,
+    .info-css,
+    .info-javascript {
+      width: 300px;
+      font-size: 16px;
+    }
+    .info-css p,
+    .info-html p,
+    .info-javascript p {
+      font-size: 1rem;
+      line-height: 24px;
+    }
+    .info-css img,
+    .info-html img,
+    .info-javascript img {
+      height: 150px;
+    }
+  }
+}

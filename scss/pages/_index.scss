@@ -8,7 +8,6 @@
   .left-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
     width: 50%;
     margin: 6px;
@@ -23,13 +22,12 @@
     .titles {
       .titles__index {
         font-size: 1.25rem;
+        margin: 0px;
       }
     }
   }
   .nav-index {
-    /* white-space: nowrap; */
-    font-size: 1rem;
-    padding: 0;
+    white-space: nowrap; /* Sin espacios entre lineas */
     margin: 4px;
 
     list__index,
@@ -52,8 +50,8 @@
   &__title {
     display: flex;
     position: absolute;
-    margin-top: 100px;
-    margin-left: 16px;
+    top: 20%;
+    left: 5%;
     padding: 6px;
     border: solid 3px;
     border-radius: 9px;
@@ -74,17 +72,6 @@
   flex-direction: column;
   margin-top: 12px;
 
-  .wrapper-center__container {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-
-    &__img {
-      width: 100%;
-      height: 30vh;
-      object-fit: contain;
-    }
-  }
   .container-text-center {
     display: flex;
     flex-direction: column;
@@ -112,14 +99,24 @@
       letter-spacing: 1px;
       border-radius: 50px;
       border-color: rgb(45, 238, 45);
-      background-color: white;
-      color: rgb(45, 238, 45);
+      background-color: rgb(45, 238, 45);
+      color: white;
+    }
+  }
+  .wrapper-center__container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+      width: 100%;
+      height: 30vh;
+      object-fit: contain;
     }
   }
 }
 .container-iframe {
-  width: 100%;
-  height: 54.5vh;
+  height: auto;
   background-color: white;
   text-align: center;
 
@@ -129,75 +126,10 @@
   }
   &__iframe {
     width: 100%;
+    vertical-align: bottom;
   }
 }
-.container-footer {
-  display: grid;
-  background-color: #fffcf2;
-  color: black;
-  text-align: center;
 
-  grid-template-columns: 100%;
-  grid-template-rows: 1fr 150px 150px;
-
-  .column-1 {
-    padding-top: 12px;
-    font-family: sans-serif;
-    background-color: rgb(62, 174, 244);
-    border: solid 1px;
-
-    &__img {
-      width: 100%;
-      height: 50px;
-      object-fit: contain;
-      margin: 6px 0 6px 0;
-    }
-    &__a {
-      display: inline-block;
-      align-self: center;
-      font-size: 15px;
-      font-weight: bold;
-      padding: 6px 6px;
-      margin: 3px;
-      letter-spacing: 1px;
-      border-radius: 50px;
-      border-color: rgb(45, 238, 45);
-      background-color: white;
-      color: rgb(45, 238, 45);
-    }
-  }
-
-  .column-2 {
-    padding: 1rem;
-    line-height: 2rem;
-    font-family: cursive;
-    background-color: #8e8e7d;
-    border: solid 1px;
-  }
-  .column-3 {
-    padding: 1rem;
-    line-height: 1.5rem;
-    font-family: cursive;
-    background-color: #f55656;
-    border: solid 1px;
-
-    .column3__a {
-      font-weight: 600;
-      color: white;
-    }
-  }
-  .column-4 {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
-    background-color: #ffba52;
-    border: solid 1px;
-  }
-}
-ul,
-li {
-  list-style-type: none;
-}
 @media (min-width: 769px) and (max-width: 1024px) {
   .header-wrapper {
     display: flex;
@@ -216,6 +148,7 @@ li {
     }
   }
 }
+
 @media (min-width: 1024px) and (max-width: 2100px) {
   .header-wrapper {
     justify-content: space-around;
@@ -251,9 +184,12 @@ li {
   }
   .container-iframe {
     width: 100%;
-    height: 54.9vh;
     background-color: white;
     text-align: center;
+
+    &__iframe {
+      height: 69.5vh;
+    }
   }
 
   .wrapper-center {
@@ -275,9 +211,10 @@ li {
       }
     }
   }
-  .container-footer {
+}
+/* .container-footer {
     display: grid;
-    background-color: #fffcf2;
+    background-color: cadetblue;
     color: black;
     text-align: center;
     width: 100%;
@@ -313,11 +250,10 @@ li {
       padding: 3rem;
       line-height: 2rem;
       font-family: cursive;
-      background-color: #8e8e7d;
       grid-column: 2 / 4;
     }
     .column-3 {
-      padding: 3rem;
+      padding: 2rem;
       grid-column: 2 / 4;
 
       .list-column3 {
@@ -331,6 +267,7 @@ li {
     .column-4 {
       grid-column: 1 / 4;
       text-align: center;
+      background-color: #212529;
+      color: white;
     }
-  }
-}
+  } */

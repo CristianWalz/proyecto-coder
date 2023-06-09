@@ -6,13 +6,27 @@ $color-btn: cadetblue;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
 }
-
 a {
+  text-decoration: none;
   color: white;
+  font-weight: 500;
 }
 ul,
-ol {
+ol,
+li {
   list-style-type: none;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Roboto, sans-serif;
 }

@@ -1,59 +1,110 @@
 /* FOOTER */
 .container-footer {
   display: grid;
-  background-color: #fffcf2;
+  background-color: cadetblue;
   color: black;
   text-align: center;
-  width: 100%;
 
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  column-gap: 0;
-  row-gap: 0;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 150px 150px;
 
   .column-1 {
-    grid-row: 1 / 4;
-    padding: 2rem;
+    padding-top: 12px;
+    font-family: sans-serif;
 
-    h3 {
-      padding: 12px;
-    }
-    p {
-      font-size: 20px;
-      font-weight: 600;
-    }
-    &__a {
-      margin-top: 2rem;
-    }
     &__img {
-      margin-top: 2rem;
-      width: 40%;
-      height: 300px;
+      width: 100%;
+      height: 50px;
       object-fit: contain;
-      margin: 30px 0 6px 0;
+      margin: 6px 0 6px 0;
     }
   }
+
   .column-2 {
-    padding: 3rem;
     line-height: 2rem;
     font-family: cursive;
-    background-color: #8e8e7d;
-    grid-column: 2 / 4;
+
+    &__a {
+    }
   }
   .column-3 {
-    padding: 3rem;
-    grid-column: 2 / 4;
+    padding: 1rem;
+    line-height: 1.5rem;
+    font-family: cursive;
 
-    .list-column3 {
+    .column3__a {
       font-weight: 600;
-
-      .column3__a {
-        color: white;
-      }
+      color: white;
     }
   }
   .column-4 {
-    grid-column: 1 / 4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    border: solid 1px;
+    background-color: #212529;
+    color: white;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 2100px) {
+  .container-footer {
+    display: grid;
+    background-color: cadetblue;
+    color: black;
     text-align: center;
+    width: 100%;
+
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0;
+    row-gap: 0;
+
+    .column-1 {
+      grid-row: 1 / 4;
+
+      h3 {
+        padding: 12px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      &__a {
+        margin-top: 2rem;
+      }
+      &__img {
+        margin-top: 2rem;
+        width: 40%;
+        height: 300px;
+        object-fit: contain;
+        margin: 30px 0 6px 0;
+      }
+    }
+    .column-2 {
+      padding: 2rem;
+      line-height: 3rem;
+      font-family: cursive;
+      grid-column: 2 / 4;
+    }
+    .column-3 {
+      padding: 2rem;
+      line-height: 3rem;
+      grid-column: 2 / 4;
+
+      .list-column3 {
+        font-weight: 600;
+
+        .column3__a {
+          color: white;
+        }
+      }
+    }
+    .column-4 {
+      grid-column: 1 / 4;
+      text-align: center;
+      background-color: #212529;
+      color: white;
+    }
   }
 }

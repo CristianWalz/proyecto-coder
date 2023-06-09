@@ -1,14 +1,14 @@
-.container-text-center__btn {
+@mixin btn-whatsapp {
   display: inline-block;
   align-self: center;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   padding: 6px 6px;
-  margin: 5px;
+  margin: 3px;
   letter-spacing: 1px;
   border-radius: 50px;
-  border-color: rgb(45, 238, 45);
-  background-color: white;
-  color: rgb(45, 238, 45);
+  background-color: rgb(45, 238, 45);
+  color: white;
 }
+
 /* BTN WHATSAPP */

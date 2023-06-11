@@ -366,6 +366,7 @@ h6 {
 .contact-wrapper .contact-container {
   display: flex;
   align-items: center;
+  height: auto;
 }
 .contact-wrapper .contact-container .contact-form {
   width: 100%;
@@ -393,6 +394,35 @@ h6 {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5em;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3215686275);
+    padding: 2rem;
+    text-align: center;
+    height: 100vh;
+  }
+  .contact-wrapper .contact-container {
+    height: 500px;
+    /* display: flex;
+    align-items: center; */
+  }
+}
+@media (min-width: 1024px) and (max-width: 2100px) {
+  .contact-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3215686275);
+    padding: 2rem;
+    text-align: center;
+    height: 100vh;
+  }
+  .contact-wrapper .contact-container {
+    height: 700px;
+    padding-bottom: 10rem;
+  }
 }
 /* * APERTURA MAIN INFORMACION PERSONAL */
 .barra-informacionpersonal {

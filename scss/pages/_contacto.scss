@@ -8,6 +8,7 @@
   .contact-container {
     display: flex;
     align-items: center;
+    height: auto;
 
     .contact-form {
       width: 100%;
@@ -40,6 +41,37 @@
       textarea {
         @extend .contact-form__inputext;
       }
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contact-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #00000052;
+    padding: 2rem;
+    text-align: center;
+    height: 100vh;
+
+    .contact-container {
+      height: 500px;
+      /* display: flex;
+      align-items: center; */
+    }
+  }
+}
+@media (min-width: 1024px) and (max-width: 2100px) {
+  .contact-wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #00000052;
+    padding: 2rem;
+    text-align: center;
+    height: 100vh;
+
+    .contact-container {
+      height: 700px;
+      padding-bottom: 10rem;
     }
   }
 }

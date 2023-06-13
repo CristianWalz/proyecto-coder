@@ -65,9 +65,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr auto;
+    grid-gap: 10px;
 
     .card {
       border: solid 1px black;
+      margin: 0 40px;
 
       &__title {
         white-space: nowrap;
@@ -79,6 +81,7 @@
     .card-5 {
       grid-area: 3 / span 2;
       text-align: center;
+      margin: 0 20px;
     }
   }
 }

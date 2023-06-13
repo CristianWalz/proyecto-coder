@@ -22,6 +22,44 @@
     object-fit: contain;
     border-radius: 1rem;
     max-width: 400px;
+
+    animation: bounce-in-top 1.3s both;
+  }
+  @keyframes bounce-in-top {
+    0% {
+      transform: translateY(-500px);
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      transform: translateY(-65px);
+      animation-timing-function: ease-in;
+    }
+    72% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    81% {
+      transform: translateY(-28px);
+      animation-timing-function: ease-in;
+    }
+    90% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
+    95% {
+      transform: translateY(-8px);
+      animation-timing-function: ease-in;
+    }
+    100% {
+      transform: translateY(0);
+      animation-timing-function: ease-out;
+    }
   }
 
   &__title {
@@ -95,6 +133,8 @@
     .container-media-section__image.hidden {
       display: grid;
       max-width: 200px;
+
+      animation-delay: 1s;
     }
   }
   .description {

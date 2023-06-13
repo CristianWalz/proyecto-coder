@@ -16,6 +16,21 @@
     background-color: black;
     color: white;
     padding: 1rem;
+    border-radius: 20px;
+
+    transform: translateY(50px);
+    animation: slide-in 2s forwards;
+
+    @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
     .contact-form {
       width: 100%;
@@ -79,6 +94,20 @@
     .contact-container {
       height: 700px;
       border-radius: 50px;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slide-in 2s forwards;
+    }
+
+    @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   }
 }

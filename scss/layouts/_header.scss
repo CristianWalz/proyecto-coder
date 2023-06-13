@@ -31,12 +31,13 @@
     padding: 0;
     margin: 4px;
 
-    list__index,
+    .list__index,
     a {
-      /* font-weight: 500;
-      color: white; */
+      font-weight: 500;
+      color: white;
 
       &:hover {
+        transform: scale(1.1) translateY(-5px);
         color: red;
       }
     }

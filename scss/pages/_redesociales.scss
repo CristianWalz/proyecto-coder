@@ -23,7 +23,7 @@
     border-radius: 1rem;
     max-width: 400px;
 
-    animation: bounce-in-top 1.3s both;
+    animation: bounce-in-top 1.7s both;
   }
   @keyframes bounce-in-top {
     0% {
@@ -134,7 +134,7 @@
       display: grid;
       max-width: 200px;
 
-      animation-delay: 1s;
+      animation-delay: 1.5s;
     }
   }
   .description {

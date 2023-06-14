@@ -3,7 +3,12 @@
 .contact-wrapper {
   display: flex;
   justify-content: center;
-  background-color: #00000052;
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
   text-align: center;
   height: 100vh;
   padding: 1rem;
@@ -13,7 +18,7 @@
     display: flex;
     align-items: center;
     height: 800px;
-    background-color: black;
+    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
     color: white;
     padding: 1rem;
     border-radius: 20px;
@@ -50,6 +55,9 @@
         border: none;
         border-radius: 4px;
         cursor: pointer;
+      }
+      &__inputsubmit:hover {
+        transform: scale(1.1) translateY(-5px);
       }
       &__inputsubmitRed {
         @extend .contact-form__inputsubmit;

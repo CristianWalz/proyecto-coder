@@ -23,19 +23,6 @@
   .column-2 {
     line-height: 2rem;
     font-family: cursive;
-
-    /* &__a {
-      display: inline-block;
-      align-self: center;
-      font-size: 15px;
-      font-weight: bold;
-      padding: 6px 6px;
-      margin: 3px;
-      letter-spacing: 1px;
-      border-radius: 50px;
-      background-color: rgb(45, 238, 45);
-      color: white;
-    } */
   }
   .column-3 {
     padding: 1rem;
@@ -60,12 +47,12 @@
 @media (min-width: 1024px) and (max-width: 2100px) {
   .container-footer {
     display: grid;
-    background-color: cadetblue;
-    color: black;
+    background-image: linear-gradient(#022f68, #1f69c7);
+    color: white;
     text-align: center;
     width: 100%;
 
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 0;
     row-gap: 0;
@@ -75,24 +62,12 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin: 0 12px 0 12px;
+      margin: 0 2rem 0 2rem;
+      line-height: 2;
 
-      h3 {
-        padding: 12px;
-      }
       p {
         font-size: 20px;
         font-weight: 600;
-      }
-      &__a {
-        margin-top: 2rem;
-      }
-      &__img {
-        margin-top: 2rem;
-        width: 40%;
-        height: 300px;
-        object-fit: contain;
-        margin: 30px 0 6px 0;
       }
     }
     .column-2 {
@@ -100,20 +75,26 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      line-height: 2
-      font-family: cursive;
+      line-height: 2;
+      height: 200px;
     }
     .column-3 {
       grid-column: 2 / 4;
       display: flex;
       flex-direction: column;
       line-height: 2;
+      height: 100px;
 
       .list-column3 {
         font-weight: 600;
 
         .column3__a {
-          color: white;
+          color: orange;
+          transition: transform 0.3s ease;
+        }
+        .column3__a:hover {
+          /*       -webkit-transform: scale(1.1) translateY(-5px);
+          transform: scale(1.1) translateY(-5px); */
         }
       }
     }

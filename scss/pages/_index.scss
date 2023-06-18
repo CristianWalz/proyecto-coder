@@ -116,9 +116,6 @@
 @media (min-width: 1024px) and (max-width: 2100px) {
   .wrapper-index__img {
     height: 95vh;
-
-    /* &__title {
-    } */
   }
   .container-iframe {
     width: 100%;
@@ -163,32 +160,5 @@
         padding: 0 80px 0 80px;
       }
     }
-  }
-}
-.container-footer {
-  .column-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem 0 2rem;
-    line-height: 2;
-
-    /* .container-text-center__btn {
-      margin-top: 3rem;
-      @extend .btn;
-    } */
-  }
-  .column-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .column-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 2;
   }
 }

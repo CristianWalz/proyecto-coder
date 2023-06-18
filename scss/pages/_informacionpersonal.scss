@@ -38,10 +38,14 @@
     transform: translate(-50%, -50%);
     width: 150px;
     font-size: 1.5rem;
-    padding: 4px;
+    padding: 2px;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.4);
     color: white;
+    transition: background-color 0.3s ease-in-out;
+  }
+  &__description:hover {
+    background-color: green;
   }
 }
 .wrapper_imginformacionpersonal {
@@ -67,8 +71,11 @@
     max-width: 500px;
     max-height: 300px;
     margin: 24px;
-    filter: drop-shadow(5px 5px 20px black);
+    /* filter: drop-shadow(5px 5px 20px black); */
     border-radius: 15px;
+    box-shadow: rgba(46, 107, 240, 0.4) 5px 5px, rgb(255, 255, 255) 10px 10px,
+      rgba(240, 46, 170, 0.2) 15px 15px, rgba(4, 187, 243, 0.1) 20px 20px,
+      rgba(240, 46, 170, 0.05) 25px 25px;
   }
   .info-css p,
   .info-html p,
@@ -84,17 +91,31 @@
   .info-javascript h4 {
     font-size: 1.5rem;
     margin-bottom: 16px;
+    color: white;
   }
   .input__ {
     height: 40px;
-    width: 110px;
-    padding: 4px;
+    width: auto;
+    padding: 2px;
     align-self: center;
     border: solid black;
     background-color: antiquewhite;
     border-radius: 6px;
   }
+  .info-css:hover {
+    transform: scale(1.1) translateY(-50px);
+    transition: all 0.5s;
+  }
+  .info-html:hover {
+    transform: scale(1.1) translateY(-50px);
+    transition: all 0.5s;
+  }
+  .info-javascript:hover {
+    transform: scale(1.1) translateY(-50px);
+    transition: all 0.5s;
+  }
 }
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .header-informacionpersonal {
     width: 100%;
@@ -147,7 +168,7 @@
     height: 60vh;
 
     &__description {
-      top: 50%;
+      top: 35%;
       width: 100px;
       font-size: 0.75rem;
     }
@@ -164,6 +185,7 @@
     .info-javascript {
       width: 300px;
       font-size: 16px;
+      padding: 1rem 0 1rem 0;
     }
     .info-css p,
     .info-html p,

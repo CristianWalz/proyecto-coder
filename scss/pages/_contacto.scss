@@ -1,14 +1,41 @@
 /* *APERTURA MAIN CONTACTO */
 
 .contact-wrapper {
-  background-color: #00000052;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
   text-align: center;
+  height: 100vh;
+  padding: 1rem;
+  background-color: white;
 
   .contact-container {
     display: flex;
     align-items: center;
-    height: auto;
+    height: 800px;
+    background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+    color: white;
+    padding: 1rem;
+    border-radius: 20px;
+
+    transform: translateY(50px);
+    animation: slide-in 2s forwards;
+
+    @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
     .contact-form {
       width: 100%;
@@ -29,6 +56,9 @@
         border-radius: 4px;
         cursor: pointer;
       }
+      &__inputsubmit:hover {
+        transform: scale(1.1) translateY(-5px);
+      }
       &__inputsubmitRed {
         @extend .contact-form__inputsubmit;
         background-color: red;
@@ -48,13 +78,13 @@
   .contact-wrapper {
     display: flex;
     justify-content: center;
-    background-color: #00000052;
+    background-color: white;
     padding: 2rem;
     text-align: center;
     height: 100vh;
 
     .contact-container {
-      height: 500px;
+      height: 800px;
       /* display: flex;
       align-items: center; */
     }
@@ -64,14 +94,28 @@
   .contact-wrapper {
     display: flex;
     justify-content: center;
-    background-color: #00000052;
-    padding: 2rem;
+    background-color: white;
+    padding: 1rem;
     text-align: center;
     height: 100vh;
 
     .contact-container {
       height: 700px;
-      padding-bottom: 10rem;
+      border-radius: 50px;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slide-in 2s forwards;
+    }
+
+    @keyframes slide-in {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   }
 }

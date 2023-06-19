@@ -1,10 +1,16 @@
 /* Servicios Main */
+strong {
+  color: black;
+  font-weight: 700;
+}
 .wrapper-card {
-  background-color: lightgoldenrodyellow;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  color: white;
 }
 
 .container-redes {
-  background-color: lightgoldenrodyellow;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  color: white;
 
   &__img {
     width: 100%;
@@ -14,6 +20,8 @@
   &__title {
     text-align: center;
     padding: 1em;
+    animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
   }
 }
 .card {
@@ -56,9 +64,10 @@
     align-items: center;
 
     &__title {
-      text-align: end;
+      text-align: center;
       font-size: 1.5rem;
       width: 90%;
+      font-size: 2.5rem;
     }
   }
   .wrapper-card {
@@ -69,7 +78,7 @@
 
     .card {
       border: solid 1px black;
-      margin: 0 40px;
+      margin: 10px 32px;
 
       &__title {
         white-space: nowrap;
@@ -81,7 +90,7 @@
     .card-5 {
       grid-area: 3 / span 2;
       text-align: center;
-      margin: 0 20px;
+      margin: 0 30px;
     }
   }
 }

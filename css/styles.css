@@ -199,6 +199,7 @@ h6 {
   .container-footer .column-1 p {
     font-size: 20px;
     font-weight: 600;
+    margin: 0 4rem 0 4rem;
   }
   .container-footer .column-2 {
     grid-column: 2/4;
@@ -345,6 +346,23 @@ h6 {
   100% {
     transform: translateY(0);
     animation-timing-function: ease-out;
+  }
+}
+.focus-in-contract-bck {
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(12px);
+    filter: blur(0);
+    opacity: 1;
   }
 }
 /* APERTURA MAIN INDEX  */
@@ -816,7 +834,19 @@ h6 {
   object-fit: contain;
   border-radius: 1rem;
   max-width: 400px;
-  animation: bounce-in-top 1.7s both;
+  animation: bounce-in-top 2.5s both;
+}
+.container-media-section.animation-1 {
+  animation: bounce-in-top 2.5s both;
+  animation-delay: 0.5s;
+}
+.container-media-section.animation-2 {
+  animation: bounce-in-top 4.5s both;
+  animation-delay: 0.75s;
+}
+.container-media-section.animation-3 {
+  animation: bounce-in-top 6.5s both;
+  animation-delay: 1s;
 }
 @keyframes bounce-in-top {
   0% {
@@ -868,11 +898,20 @@ h6 {
   margin: 1em;
   line-height: 1.5rem;
   border-radius: 20px;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.4588235294);
 }
 .container-media-section--hidden {
   /* hidden in mobile */
   display: none;
+}
+.container-media-section .description {
+  display: block;
+  padding: 0 12px 0 12px;
+  background-color: rgba(128, 128, 128, 0.4588235294);
+  border-radius: 30px;
+  line-height: 1.5;
+  font-weight: bold;
+  width: 250px;
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -904,16 +943,16 @@ h6 {
     grid-gap: 12px;
     padding: 0;
   }
-  .container-media-section {
+  .wrapper-media-section .container-media-section {
     display: flex;
     justify-content: flex-start;
     margin: 0 -24px 0 -2px;
   }
-  .container-media-section__image {
+  .wrapper-media-section .container-media-section__image {
     max-width: 800px;
     max-height: 100%;
   }
-  .container-media-section--hidden {
+  .wrapper-media-section .container-media-section--hidden {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -921,15 +960,15 @@ h6 {
     grid-area: 2;
     margin-top: 1rem;
   }
-  .container-media-section--hidden .container-media-section__image.hidden {
+  .wrapper-media-section .container-media-section--hidden .container-media-section__image.hidden {
     display: grid;
     max-width: 200px;
     animation-delay: 1.5s;
   }
-  .description {
+  .wrapper-media-section .description {
     display: block;
     padding: 0 12px 0 12px;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.4588235294);
     border-radius: 30px;
     line-height: 1.5;
     font-weight: bold;
@@ -937,12 +976,19 @@ h6 {
   }
 }
 /* Servicios Main */
+strong {
+  color: black;
+  font-weight: 700;
+}
+
 .wrapper-card {
-  background-color: lightgoldenrodyellow;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  color: white;
 }
 
 .container-redes {
-  background-color: lightgoldenrodyellow;
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  color: white;
 }
 .container-redes__img {
   width: 100%;
@@ -952,6 +998,7 @@ h6 {
 .container-redes__title {
   text-align: center;
   padding: 1em;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .card {
@@ -994,9 +1041,10 @@ h6 {
     align-items: center;
   }
   .container-redes__title {
-    text-align: end;
+    text-align: center;
     font-size: 1.5rem;
     width: 90%;
+    font-size: 2.5rem;
   }
   .wrapper-card {
     display: grid;
@@ -1006,7 +1054,7 @@ h6 {
   }
   .wrapper-card .card {
     border: solid 1px black;
-    margin: 0 40px;
+    margin: 10px 32px;
   }
   .wrapper-card .card__title {
     white-space: nowrap;
@@ -1017,7 +1065,7 @@ h6 {
   .wrapper-card .card-5 {
     grid-area: 3/span 2;
     text-align: center;
-    margin: 0 20px;
+    margin: 0 30px;
   }
 }
 

@@ -22,8 +22,19 @@
     object-fit: contain;
     border-radius: 1rem;
     max-width: 400px;
-
-    animation: bounce-in-top 1.7s both;
+    animation: bounce-in-top 2.5s both;
+  }
+  &.animation-1 {
+    animation: bounce-in-top 2.5s both;
+    animation-delay: 0.5s;
+  }
+  &.animation-2 {
+    animation: bounce-in-top 4.5s both;
+    animation-delay: 0.75s;
+  }
+  &.animation-3 {
+    animation: bounce-in-top 6.5s both;
+    animation-delay: 1s;
   }
   @keyframes bounce-in-top {
     0% {
@@ -61,7 +72,6 @@
       animation-timing-function: ease-out;
     }
   }
-
   &__title {
     font-family: Georgia, "Times New Roman", Times, serif;
     margin-top: 1.5rem;
@@ -76,11 +86,20 @@
     margin: 1em;
     line-height: 1.5rem;
     border-radius: 20px;
-    background-color: gray;
+    background-color: #80808075;
   }
   &--hidden {
     /* hidden in mobile */
     display: none;
+  }
+  .description {
+    display: block;
+    padding: 0 12px 0 12px;
+    background-color: #80808075;
+    border-radius: 30px;
+    line-height: 1.5;
+    font-weight: bold;
+    width: 250px;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -112,38 +131,39 @@
     background-color: white;
     grid-gap: 12px;
     padding: 0;
-  }
-  .container-media-section {
-    display: flex;
-    justify-content: flex-start;
-    margin: 0 -24px 0 -2px;
-    &__image {
-      max-width: 800px;
-      max-height: 100%;
-    }
-  }
-  .container-media-section--hidden {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    grid-area: 2;
-    margin-top: 1rem;
 
-    .container-media-section__image.hidden {
-      display: grid;
-      max-width: 200px;
-
-      animation-delay: 1.5s;
+    .container-media-section {
+      display: flex;
+      justify-content: flex-start;
+      margin: 0 -24px 0 -2px;
+      &__image {
+        max-width: 800px;
+        max-height: 100%;
+      }
     }
-  }
-  .description {
-    display: block;
-    padding: 0 12px 0 12px;
-    background-color: gray;
-    border-radius: 30px;
-    line-height: 1.5;
-    font-weight: bold;
-    width: 250px;
+    .container-media-section--hidden {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      grid-area: 2;
+      margin-top: 1rem;
+
+      .container-media-section__image.hidden {
+        display: grid;
+        max-width: 200px;
+
+        animation-delay: 1.5s;
+      }
+    }
+    .description {
+      display: block;
+      padding: 0 12px 0 12px;
+      background-color: #80808075;
+      border-radius: 30px;
+      line-height: 1.5;
+      font-weight: bold;
+      width: 250px;
+    }
   }
 }

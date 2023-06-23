@@ -1,8 +1,8 @@
 /* FOOTER */
 .container-footer {
   display: grid;
-  background-color: cadetblue;
-  color: black;
+  background-image: linear-gradient(#022f68, #1f69c7);
+  color: white;
   text-align: center;
 
   grid-template-columns: 100%;
@@ -31,7 +31,7 @@
 
     .column3__a {
       font-weight: 600;
-      color: white;
+      color: orange;
     }
   }
   .column-4 {
@@ -94,8 +94,6 @@
           transition: transform 0.3s ease;
         }
         .column3__a:hover {
-          /*       -webkit-transform: scale(1.1) translateY(-5px);
-          transform: scale(1.1) translateY(-5px); */
         }
       }
     }

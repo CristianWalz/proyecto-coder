@@ -171,7 +171,8 @@ h6 {
   color: orange;
 }
 .container-footer .column-4 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   border: solid 1px;
   background-color: #212529;
   color: white;
@@ -231,7 +232,8 @@ h6 {
     color: white;
   }
 }
-.btn, .container-text-center__btn {
+.btn,
+.container-text-center__btn {
   display: inline-block;
   align-self: center;
   font-size: 15px;
@@ -516,7 +518,12 @@ h6 {
 .contact-wrapper {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
   text-align: center;
   height: 100vh;
   padding: 1rem;
@@ -546,14 +553,16 @@ h6 {
   width: 100%;
   margin: 10px 0 10px 0;
 }
-.contact-wrapper .contact-container .contact-form__inputext, .contact-wrapper .contact-container .contact-form textarea {
+.contact-wrapper .contact-container .contact-form__inputext,
+.contact-wrapper .contact-container .contact-form textarea {
   width: 100%;
   padding: 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.contact-wrapper .contact-container .contact-form__inputsubmit, .contact-wrapper .contact-container .contact-form__inputsubmitRed {
+.contact-wrapper .contact-container .contact-form__inputsubmit,
+.contact-wrapper .contact-container .contact-form__inputsubmitRed {
   background-color: #4caf50;
   color: white;
   padding: 0.5rem 1rem;
@@ -561,7 +570,8 @@ h6 {
   border-radius: 4px;
   cursor: pointer;
 }
-.contact-wrapper .contact-container .contact-form__inputsubmit:hover, .contact-wrapper .contact-container .contact-form__inputsubmitRed:hover {
+.contact-wrapper .contact-container .contact-form__inputsubmit:hover,
+.contact-wrapper .contact-container .contact-form__inputsubmitRed:hover {
   transform: scale(1.1) translateY(-5px);
 }
 .contact-wrapper .contact-container .contact-form__inputsubmitRed {
@@ -619,9 +629,14 @@ h6 {
   display: flex;
   align-items: center;
   padding-left: 12px;
+  font-weight: bold;
   height: 50px;
   background: rgb(0, 119, 182);
-  background: linear-gradient(0deg, rgb(0, 119, 182) 51%, rgb(254, 250, 224) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(0, 119, 182) 51%,
+    rgb(254, 250, 224) 100%
+  );
 }
 
 .educacion-informacionpersonal {
@@ -687,7 +702,9 @@ h6 {
   margin: 24px;
   /* filter: drop-shadow(5px 5px 20px black); */
   border-radius: 15px;
-  box-shadow: rgba(46, 107, 240, 0.4) 5px 5px, rgb(255, 255, 255) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(4, 187, 243, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  box-shadow: rgba(46, 107, 240, 0.4) 5px 5px, rgb(255, 255, 255) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(4, 187, 243, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
 }
 .wrapper_imginformacionpersonal .info-css p,
 .wrapper_imginformacionpersonal .info-html p,
@@ -956,7 +973,9 @@ h6 {
     grid-area: 2;
     margin-top: 1rem;
   }
-  .wrapper-media-section .container-media-section--hidden .container-media-section__image.hidden {
+  .wrapper-media-section
+    .container-media-section--hidden
+    .container-media-section__image.hidden {
     display: grid;
     max-width: 200px;
     animation-delay: 1.5s;
@@ -1026,7 +1045,7 @@ strong {
     white-space: nowrap;
   }
   .card-5 {
-    grid-area: 3/span 2;
+    grid-area: 3 / span 2;
     text-align: center;
   }
 }
@@ -1059,7 +1078,7 @@ strong {
     font-size: 1.5rem;
   }
   .wrapper-card .card-5 {
-    grid-area: 3/span 2;
+    grid-area: 3 / span 2;
     text-align: center;
     margin: 0 30px;
   }

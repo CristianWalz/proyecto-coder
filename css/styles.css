@@ -127,6 +127,7 @@ h6 {
   }
   .header-wrapper .left-container .titles .titles__index {
     font-size: 1.25rem;
+    margin: 0;
   }
   .nav-index {
     display: flex;
